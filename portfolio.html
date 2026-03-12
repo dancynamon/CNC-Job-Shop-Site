@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio â Aegis Custom Machining and Printing</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav__logo"><div class="nav__logomark">ACM</div><span>Aegis Custom Machining and Printing</span></a>
+  <div class="nav__links"><a href="index.html" class="nav__link">Home</a><a href="services.html" class="nav__link">Services</a><a href="portfolio.html" class="nav__link active">Portfolio</a><a href="quote.html" class="nav__link nav__link--cta">Get a Quote</a></div>
+  <button class="nav__burger" aria-label="Menu" onclick="document.querySelector('.nav__links').classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-hero page-hero--short">
+  <div class="page-hero__bg">
+    <img src="https://lh3.googleusercontent.com/pw/AP1GczOvgQM-fKUd9hQs9snktuO6QbgHy5nuo7hh3w1y-hQnX-NpcKa8XFbY7s6vm5ep1FUZXCD9tYTNZTzmIh3HqUG7YC3C4qOfevM3empJnGy1jinEH70=w1600" alt="">
+    <div class="page-hero__overlay"></div>
+  </div>
+  <div class="page-hero__content">
+    <span class="section__tag" style="color:rgba(255,255,255,0.6)">Our Work</span>
+    <h1 class="page-hero__title"><em>Portfolio</em></h1>
+    <p class="page-hero__sub">A selection of recent projects across CNC machining and digital printing.</p>
+  </div>
+</header>
+
+<section class="section portfolio">
+  <div class="portfolio__filters">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="cnc">CNC Machining</button>
+    <button class="filter-btn" data-filter="print">Digital Printing</button>
+  </div>
+  <div class="portfolio__grid" id="portfolioGrid">
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczMPzU_YF1fAChQctxaPL_KvScGou9EmbTnw3vEQm_1HXXG4NT2WruGgS22Vv9RWeDjY9Dryq1ISaIHB6sQ-l_Vv9ke4d7eU2Y_yl0CjDRbt7xIchEQ=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Precision Machined Components</h3><p>Custom CNC milled parts with tight tolerances and professional finish.</p></div>
+
+    <div class="port-card" data-cat="print"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczMPWU8p67Rqd9AOX5l6T6LlPABA4EYdSu1qVPbEv9SW8Y5bVKsTgp89M1qVUNf4LZj_8gEhRL_YpV2wBB61zIKlKz-OGh6FdSChKr8CHnSrJZkIBZA=w800" alt=""><span class="port-card__badge">Print</span></div><h3>Large Format Graphics</h3><p>UV printed signage on rigid substrates for commercial applications.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczP7WiAOC-GAAi7NbOebMudP-_S_UY7EtI_0fBaEuPOVJRfrV5cTzS7UgNr-mwQS0N5sPJ9beUYvcXiRssogVU-66agqZHpG0aWfnxrdubJ8JDBBDOo=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Multi-Part Assembly</h3><p>Complex multi-component assembly requiring precision machining across materials.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczMnlGx_KsKbojIRP52pKBEdGEXEXyrNYnop1monoJ4DqSPrnnBMebS6Vi0ZSnG45-M4yf0QMW-H1XNmdIIzZFv4kT-Gr9n6CTe_xqeumyuRY_gMLBo=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Custom Hardware</h3><p>Purpose-built hardware machined to exact specifications.</p></div>
+
+    <div class="port-card" data-cat="print"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczMXEqjqg6cOkZl0JUOHRMlABFcO4mu7PB2WirTwOvZA3qp8xL_GcVYXGHol3pjotNyrYKHC8F-RM8mzlrnXn7_tV5xmR6QKkj5hwmnwtwv_PcBDre8=w800" alt=""><span class="port-card__badge">Print</span></div><h3>Panel Printing</h3><p>Direct-to-substrate UV printing on architectural and display panels.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczMpJCr5ntJ1Oxb3f3oJ82_eTIiZVpDnKhJYUnzTfIDsM_5dybNA07qy_DsFXHCY0CqX_Qhca48tcrbwG9zjNjga9e3YaARZ80vAI_zqQAYRVJDwTqc=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Turned Components</h3><p>CNC lathe work â threading, boring, and profiling to spec.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczNQxH5SWv8YrXmuJm16iGWs4SU5V8-UeZaL5kkH9GvXV_IwjFIu5iX1K5xZG_slLyww54ESARSjCv045w9OjW52aQ8ARMoiINwkYojmY04Kjue2KO8=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Fixture &amp; Tooling</h3><p>Custom jigs, fixtures, and tooling for manufacturing operations.</p></div>
+
+    <div class="port-card" data-cat="print"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczPfQS_Fwy_OyZybGiGHyhcvB8wXWsk91QwWvG09HxBbTnH7pnEJC0I3lhCV_y2NJjHD0NCSuiJj9uVK8epUZB80MwP0V10cDiXWoR5Wc5D-yq443gM=w800" alt=""><span class="port-card__badge">Print</span></div><h3>Display &amp; Signage</h3><p>Printed display panels and branded signage for commercial spaces.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczPaSqPlpjVuvXp2-4MgddCCFBrgtFDoeilwd6DdgrUJIiujvhbQUY3xdpIONAlRQosBW2GO_Os71-aQW_QalZmY-krJDBsP3-00OasX_Ag_MOsdH2s=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Enclosures &amp; Housings</h3><p>Machined enclosures for electronics and industrial equipment.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczM_-4ODbJGgXGU-SlMafIGVz7tcQX9BXT2JbeaokTjtu2h3gM4DsakW-bHwSYKcF5jiaTIpI-IwI89c9L9rwZnda-P56z-Xn9ec9dWmhvVYJCV0TmE=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Prototyping</h3><p>Rapid prototype machining for design validation and testing.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczOR9JCsysjIhxF6kGMFJhRQJb_y--ZANHhyeifOgVqUYE_sMZskvAe3hcNdhAcsjBS8wEeys6XbPbO5AoBJ5GOm3QUheA3NOyr9WYnBGKzOtfeyRFg=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Specialty Parts</h3><p>One-off and small-batch specialty components.</p></div>
+
+    <div class="port-card" data-cat="cnc"><div class="port-card__img"><img src="https://lh3.googleusercontent.com/pw/AP1GczNpZKMMZsWznMKSu8MZhrWEcmkhrSFVpmwpurmBz2kAzKtbHBfQLDCmhqf4h_ZOaHURGEaKOFbtp4ndrjjGOGJxpavw6vc62pKVjIU669_I5q_PkKw=w800" alt=""><span class="port-card__badge">CNC</span></div><h3>Production Run</h3><p>Short-run production parts with consistent quality across the batch.</p></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-section__inner" style="background:var(--accent)">
+    <div class="cta-section__content"><h2>Like what you see?</h2><p>Let's talk about your next project.</p><a href="quote.html" class="btn btn--accent btn--large" style="background:#fff;color:var(--accent)">Request a Quote</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand"><div class="footer__logo"><div class="nav__logomark">ACM</div><span>Aegis Custom Machining and Printing</span></div><p>Custom CNC machining and digital printing under one roof.</p></div>
+    <div class="footer__col"><h4>Navigate</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="quote.html">Get a Quote</a></div>
+    <div class="footer__col"><h4>Contact</h4><a href="mailto:info@cncprintshop.com">info@cncprintshop.com</a><a href="tel:+15555550100">(555) 555-0100</a><p>Your City, ST</p></div>
+  </div>
+  <div class="footer__bottom"><p>&copy; 2026 Aegis Custom Machining and Printing. All rights reserved.</p></div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
